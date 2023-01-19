@@ -350,16 +350,16 @@ img {
   
 }
 
-
-.icon-social {
+.icon-team {
+  background-color:var(--accent-color);
+  border-radius: 50%;
+  color: #f4f4fd;
   width: 40px;
   height: 40px;
 }
 
-
-.icon-team {
-  background-color:var(--accent-color);
-  border-radius: 50%;
+.icon-social {
+  fill: currentColor;
 }
 
 .icon-team:hover {
