@@ -8,6 +8,7 @@
   --tittle-text-color: #2e2f42;
   --accent-color: #4d5ae5;
   --white: #ffffff;
+  --hover: #404BBF;
 }
 
 
@@ -23,13 +24,6 @@ body {
   font-weight: 400;
   font-size: 16px;
 }
-
-
-.hero {
-  background-color: var(--tittle-text-color);
-  text-align: center;
-}
-
 
 
 h1,
@@ -175,9 +169,19 @@ img {
 .hero {
   padding-top: 188px;
   padding-bottom: 188px;
+  text-align: center;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  background-color: var(--tittle-text-color);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+  rgba(46, 47, 66, 0.7) ), url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-
-
+  
 .hero-btn {
   font-family: inherit;
   font-weight: 500;
@@ -225,6 +229,34 @@ img {
 
 .qualities-list .qualities-item:not(:last-child) {
   margin-right: 24px;
+}
+
+.qualities-item::before {
+  display: block;
+  content: '';
+  margin-bottom: 8px;
+  height: 112px;
+  background-color: #F4F4FD;
+  border-radius: 4px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-antena::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/astronaut.svg);
 }
 
 /* Section possibilities*/
@@ -308,6 +340,31 @@ img {
   margin-bottom: 8px;
 }
 
+.link-team {
+  display: flex;
+  height: 40px;
+  outline: 2px solid teal;
+  max-width: 232px;
+  margin: 8px 16px 0 16px;
+  padding: 0;
+  
+}
+
+
+.icon-social {
+  width: 40px;
+  height: 40px;
+}
+
+
+.icon-team {
+  background-color:var(--accent-color);
+  border-radius: 50%;
+}
+
+.icon-team:hover {
+  background-color:var(--hover);
+}
 /* Footer */
 
 .footer {
@@ -340,6 +397,20 @@ img {
   margin-top: 16px;
 }
 
+.footer-media p{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  
+}
+
+.footer-media {
+  display: flex;
+  
+  outline: 2px solid teal;
+}
 /* Portfolio Projects */
 
 .projects-btn {
