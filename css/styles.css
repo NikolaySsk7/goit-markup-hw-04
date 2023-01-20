@@ -155,6 +155,10 @@ img {
   margin-left: auto;
 }
 
+.address-link:hover {
+  color: #404BBF;
+}
+
 /* HERO */
 
 .hero-tittle {
@@ -238,7 +242,7 @@ img {
   height: 112px;
   background-color: #F4F4FD;
   border-radius: 4px;
-  background-size: contain;
+  background-size: 64px 64px;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -285,10 +289,18 @@ img {
   margin-right: 24px;
 }
 
+.possibilities-item {
+  border: 1px solid #E7E9FC;
+}
+
 /* Section Team */
 
 .team {
+  padding-top: 120px;
+  padding-bottom: 120px;
   background-color: #f4f4fd;
+  max-width: 1440px;
+  margin: auto;
 }
 .team-tittle {
   font-weight: 700;
@@ -310,6 +322,8 @@ img {
 .team-item {
   background-color: var(--white);
   padding-bottom: 32px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-item-text {
@@ -318,14 +332,10 @@ img {
   color: var(--primary-text-color);
 }
 
-.team {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
 .team-list {
   display: flex;
   text-align: center;
+  
 }
 
 .team-list .team-item:not(:last-child) {
@@ -342,20 +352,27 @@ img {
 
 .link-team {
   display: flex;
-  height: 40px;
-  outline: 2px solid teal;
-  max-width: 232px;
-  margin: 8px 16px 0 16px;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
   padding: 0;
   
 }
 
+.social-item {
+  width: 40px;
+  height: 40px;
+}
+
 .icon-team {
+  display: flex;
   background-color:var(--accent-color);
   border-radius: 50%;
   color: #f4f4fd;
-  width: 40px;
-  height: 40px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .icon-social {
@@ -365,10 +382,64 @@ img {
 .icon-team:hover {
   background-color:var(--hover);
 }
+
+/* Customers */
+
+.customers {
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+
+.customers-tittle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2E2F42;
+  margin-bottom: 72px;
+}
+
+.customers-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.customers-item {
+  width: 188px;
+  height: 88px;
+}
+
+.custoers-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #8E8F99;
+  border-radius: 4px;
+  color: #8E8F99;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.customers-icon:hover {
+  color: #404BBF;
+}
+
+.customers-icon {
+  fill: currentColor;
+}
+
+
+
 /* Footer */
 
 .footer {
   background-color: var(--tittle-text-color);
+  max-width: 1440px;
+  margin: auto;
 }
 
 .footer-logo {
@@ -397,20 +468,54 @@ img {
   margin-top: 16px;
 }
 
-.footer-media p{
+.footer-box {
+  display: flex;
+  margin: 0 auto;
+} 
+
+.footer-box h3 {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: var(--white);
-  
+  margin-bottom: 16px;
 }
 
-.footer-media {
-  display: flex;
-  
-  outline: 2px solid teal;
+.footericon {
+  margin-left: 120px;
 }
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.footer-item {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-link {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: #f4f4fd;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-link:hover {
+  background-color: #31D0AA;
+}
+
+.footer-icon {
+  fill: currentColor;
+}
+
+
+
 /* Portfolio Projects */
 
 .projects-btn {
@@ -457,6 +562,8 @@ img {
 .projects {
   padding-top: 96px;
   padding-bottom: 120px;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .projects-list {
@@ -478,6 +585,16 @@ img {
   column-gap: 24px;
 }
 
+.projects-item:nth-child(2) {
+  border: 0.5px solid #F4F4FD;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.projects-item {
+  border: 1px solid #E7E9FC;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
 .projects-item {
   width: 360px;
 }
@@ -493,5 +610,4 @@ img {
   border-right: 0.5px solid #F4F4FD;
   border-bottom: 0.5px solid #F4F4FD;
   padding:  32px 0 32px 16px;
-
 }
