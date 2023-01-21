@@ -177,7 +177,6 @@ img {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  
   background-color: var(--tittle-text-color);
   background-image: linear-gradient(rgba(46, 47, 66, 0.7),
   rgba(46, 47, 66, 0.7) ), url(../images/hero.jpg);
@@ -299,7 +298,6 @@ img {
   padding-top: 120px;
   padding-bottom: 120px;
   background-color: #f4f4fd;
-  max-width: 1440px;
   margin: auto;
 }
 .team-tittle {
@@ -425,21 +423,20 @@ img {
   
 }
 
-.customers-icon:hover {
-  color: #404BBF;
+.customers-link:hover,
+.customer-link:focus .customer-icon {
+  border: 1px solid #404BBF;
+  color: var(--hover);
 }
 
 .customers-icon {
   fill: currentColor;
 }
 
-
-
 /* Footer */
 
 .footer {
   background-color: var(--tittle-text-color);
-  max-width: 1440px;
   margin: auto;
 }
 
@@ -563,7 +560,6 @@ img {
 .projects {
   padding-top: 96px;
   padding-bottom: 120px;
-  max-width: 1440px;
   margin: auto;
 }
 
@@ -586,16 +582,20 @@ img {
   column-gap: 24px;
 }
 
-.projects-item {
+.projects-link {
   border: 1px solid #E7E9FC;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-} 
+}  
 
-.projects-item:hover,
-.projects-item:focus {
+.projects-link:hover {
   border: 0.5px solid #F4F4FD;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
+.projects-link {
+  display: inline-block;
+} 
+
 
 .projects-item {
   width: 360px;
